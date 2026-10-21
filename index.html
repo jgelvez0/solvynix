@@ -1,29 +1,331 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content="SOLVYNIX: desarrollo web, automatización e IA, soporte TI, analítica de datos y consultoría ERP para empresas en Colombia."/>
-<title>SOLVYNIX | Soluciones Tecnológicas</title>
-<style>
-:root{--navy:#081427;--navy2:#102440;--aqua:#46e5cb;--blue:#328ff5;--paper:#f4f8fc;--ink:#11223a;--muted:#63758e;--line:#e2eaf3}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:white}a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}button{cursor:pointer} .container{max-width:1160px;padding:0 24px;margin:auto}.top{background:var(--navy);color:#e8f4ff;position:sticky;top:0;z-index:99;border-bottom:1px solid #ffffff1b}.bar{display:flex;align-items:center;justify-content:space-between;min-height:78px;gap:20px}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:39px;height:39px;border:1px solid #40ead569;border-radius:11px;display:grid;place-items:center;color:var(--aqua);font-weight:900;font-size:19px;background:#12314a}.brand strong{letter-spacing:.12em;font-size:20px}.brand small{display:block;color:#87b1c7;font-size:9px;letter-spacing:.2em;margin-top:3px}.navlinks{display:flex;gap:25px;align-items:center;font-size:13px;color:#c6d5e7}.navlinks a:hover{color:var(--aqua)}.btn{border:0;border-radius:10px;padding:13px 20px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:14px;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--aqua);color:#05283b}.outline{border:1px solid #94b6cc80;color:#f5fcff;background:transparent}.dark{background:var(--navy);color:white}.menu{display:none;background:transparent;color:white;border:1px solid #ffffff45;border-radius:8px;padding:8px}.hero{background:radial-gradient(ellipse at 85% 30%,#174e72 0,transparent 47%),linear-gradient(135deg,#081427,#102b47);color:white;overflow:hidden}.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center;padding:93px 0 100px}.eyebrow{text-transform:uppercase;font-size:12px;letter-spacing:.2em;font-weight:800;color:var(--aqua)}h1{font-size:clamp(42px,5.5vw,70px);line-height:1.08;letter-spacing:-.045em;margin:17px 0 23px}h1 em{font-style:normal;color:var(--aqua)}.lead{font-size:17px;line-height:1.8;color:#b8cadc;max-width:610px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.checks{display:flex;gap:21px;flex-wrap:wrap;color:#bbd0e0;font-size:12px;margin-top:37px}.checks span:before{content:'✓';color:var(--aqua);margin-right:7px}.visual{position:relative;min-height:380px;display:grid;place-items:center}.orbit{width:310px;height:310px;border-radius:50%;border:1px solid #64f8e43d;box-shadow:0 0 0 40px #1c90bb0c,0 0 0 85px #1c90bb09;display:grid;place-items:center;position:relative}.core{width:175px;height:175px;background:linear-gradient(145deg,#163d61,#0c1c35);border:1px solid #37ddc85e;box-shadow:0 0 80px #0bd7ca23;border-radius:28px;display:grid;place-items:center;font-size:65px;font-weight:900;color:var(--aqua);letter-spacing:-.11em}.pill{position:absolute;background:#12324d;border:1px solid #38617b;border-radius:10px;padding:11px 15px;font-size:12px;color:#d7ebf9;box-shadow:0 12px 30px #0003}.p1{top:30px;left:-54px}.p2{top:68px;right:-77px}.p3{bottom:58px;left:-75px}.p4{bottom:23px;right:-48px}.section{padding:84px 0}.soft{background:var(--paper)}.section-head{max-width:735px;margin-bottom:38px}.kicker{color:#147e9b;font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:.15em}h2{font-size:clamp(29px,4vw,43px);line-height:1.15;letter-spacing:-.035em;margin:11px 0 13px}.section-head p{color:var(--muted);line-height:1.75}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:18px;padding:28px;background:#fff;box-shadow:0 5px 20px #15314b08}.card:hover{border-color:#65c5d4;box-shadow:0 14px 34px #15314b14}.card .num{color:#1ba7ad;font-size:12px;font-weight:800;letter-spacing:.14em}.card .symbol{font-size:27px;margin:18px 0 9px}.card h3{font-size:20px;line-height:1.3;margin:10px 0}.card p{color:var(--muted);font-size:14px;line-height:1.7;min-height:70px}.card ul{padding:0;list-style:none;color:#38506b;font-size:13px;line-height:2.1}.card li:before{content:'•';color:#0aa4a7;font-weight:bold;margin-right:9px}.card a{display:inline-flex;font-size:13px;font-weight:750;color:#137ca0;margin-top:10px}.card.wide{grid-column:span 2;background:#ecf9f8}.split{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center}.dark-panel{background:linear-gradient(140deg,#112d4a,#071729);border-radius:23px;padding:42px;color:white;min-height:355px;display:flex;flex-direction:column;justify-content:center}.dark-panel .small{color:var(--aqua);font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}.dark-panel h3{font-size:32px;line-height:1.25;margin:20px 0}.dark-panel p{color:#bdd0e2;line-height:1.7}.steps{display:grid;gap:16px}.step{display:flex;gap:18px;align-items:flex-start}.step b{display:grid;place-items:center;flex-shrink:0;height:42px;width:42px;border-radius:12px;background:#e1f6f3;color:#087d81}.step strong{display:block;margin:3px 0 5px}.step p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}.expert{background:#0b1d34;color:white}.expert .section-head p{color:#b7c6d8}.expert-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}.expert ul{list-style:none;padding:0;display:grid;gap:16px;color:#ccdbeb;font-size:15px}.expert li:before{content:'✓';margin-right:14px;color:var(--aqua)}.expert-note{border:1px solid #3c5b75;background:#112c46;padding:28px;border-radius:16px;line-height:1.8;color:#d7e7f3}.contact-wrap{display:grid;grid-template-columns:.82fr 1.18fr;gap:45px;align-items:start}.contact-wrap p{color:var(--muted);line-height:1.75}.contact-box{border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 12px 30px #1731500c}.fields{display:grid;gap:13px}.fields label{font-size:13px;font-weight:700}.fields input,.fields select,.fields textarea{width:100%;padding:12px 13px;border:1px solid #cddae7;border-radius:9px;background:white;color:var(--ink);margin-top:6px;outline-color:#1ab8b1}.fields textarea{min-height:95px;resize:vertical}.muted{font-size:12px;color:var(--muted)}.status{font-size:13px;padding:12px;background:#eff9fa;border-radius:8px;display:none;line-height:1.6}.footer{background:#071426;color:#b2c6d9;padding:31px 0;font-size:12px}.foot-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot-inner strong{color:white;letter-spacing:.1em}.mobile-only{display:none}@media(max-width:850px){.navlinks{display:none;position:absolute;top:77px;left:0;right:0;background:#0b1d34;padding:24px;flex-direction:column;align-items:flex-start}.navlinks.show{display:flex}.menu{display:block}.hero-inner{grid-template-columns:1fr;padding:70px 0}.visual{min-height:310px}.orbit{transform:scale(.76)}.cards{grid-template-columns:repeat(2,1fr)}.split,.expert-grid,.contact-wrap{grid-template-columns:1fr;gap:32px}.section{padding:65px 0}}@media(max-width:580px){.container{padding:0 18px}.hero-inner{padding:53px 0 37px}.visual{min-height:260px}.orbit{transform:scale(.66)}h1{font-size:43px}.lead{font-size:15px}.cards{grid-template-columns:1fr}.card.wide{grid-column:span 1}.card p{min-height:0}.bar{min-height:70px}.brand strong{font-size:17px}.navlinks{top:69px}.actions .btn{width:100%}.contact-box{padding:20px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOLVYNIX — Consultoría y software para negocios locales</title>
+  <meta name="description" content="SOLVYNIX ordena la operación de tu negocio y construye el software que la sostiene. Consultoría, sistemas a medida, automatización y sitios web para PyMEs.">
+  <meta name="theme-color" content="#06192E">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="assets/img/favicon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/img/favicon-192.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SOLVYNIX — Soluciones que transforman">
+  <meta property="og:description" content="Consultoría y software para negocios locales que ya no dan abasto entre Excel, papel y WhatsApp.">
+  <meta property="og:image" content="assets/img/logo-principal.png">
+  <meta property="og:locale" content="es_MX">
+
+  <link rel="stylesheet" href="assets/css/fuente.css">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+
+  <script>
+    document.documentElement.classList.add('js');
+    window.addEventListener('load', function () {
+      window.setTimeout(function () {
+        if (!document.documentElement.classList.contains('is-ready')) {
+          document.documentElement.classList.remove('js');
+        }
+      }, 1200);
+    });
+  </script>
 </head>
 <body>
-<header class="top"><div class="container bar"><a href="#inicio" class="brand" aria-label="SOLVYNIX inicio"><span class="brand-mark">S<span style="color:#258dcd">.</span></span><span><strong>SOLVYNIX</strong><small>SOLUCIONES TECNOLÓGICAS</small></span></a><button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false">☰</button><nav class="navlinks" id="nav"><a href="#servicios">Servicios</a><a href="#metodologia">Cómo trabajamos</a><a href="#nosotros">Nosotros</a><a href="#contacto" class="btn primary">Solicitar propuesta ↗</a></nav></div></header>
-<main>
-<section class="hero" id="inicio"><div class="container hero-inner"><div><div class="eyebrow">Tecnología para negocios que avanzan</div><h1>Soluciones digitales que generan <em>resultados.</em></h1><p class="lead">Acompañamos a empresas y emprendedores con desarrollo web, automatización, soporte tecnológico, analítica de datos y consultoría ERP. Tecnología útil, enfocada en lo que tu negocio necesita.</p><div class="actions"><a href="#contacto" class="btn primary">Cuéntanos tu proyecto →</a><a href="#servicios" class="btn outline">Explorar servicios ↓</a></div><div class="checks"><span>Atención remota en Colombia</span><span>Soluciones a medida</span><span>Alcances claros</span></div></div><div class="visual" aria-hidden="true"><div class="orbit"><div class="core">S.</div><span class="pill p1">◈ Desarrollo web</span><span class="pill p2">↗ Analítica de datos</span><span class="pill p3">⚡ Automatización</span><span class="pill p4">◉ Consultoría ERP</span></div></div></div></section>
-<section class="section soft" id="servicios"><div class="container"><div class="section-head"><div class="kicker">Qué hacemos</div><h2>Cinco soluciones. Un aliado tecnológico.</h2><p>Servicios pensados para acompañar desde la presencia digital de un emprendimiento hasta la mejora tecnológica de una organización en crecimiento.</p></div><div class="cards">
-<article class="card"><span class="num">SERVICIO 01</span><div class="symbol">◫</div><h3>Desarrollo web</h3><p>Sitios que presentan tu negocio con claridad y facilitan que nuevos clientes te contacten.</p><ul><li>Webs corporativas y landing pages</li><li>Catálogos y formularios</li><li>Mantenimiento web</li></ul><a href="#contacto" data-service="Desarrollo web">Solicitar cotización →</a></article>
-<article class="card"><span class="num">SERVICIO 02</span><div class="symbol">⚡</div><h3>Automatización e IA</h3><p>Optimizamos tareas repetitivas y flujos de información para ahorrar tiempo operativo.</p><ul><li>Automatización administrativa</li><li>Flujos de atención y seguimiento</li><li>Integraciones y asistentes</li></ul><a href="#contacto" data-service="Automatización e IA">Solicitar cotización →</a></article>
-<article class="card"><span class="num">SERVICIO 03</span><div class="symbol">⌘</div><h3>Soporte TI empresarial</h3><p>Acompañamiento para mantener herramientas y aplicaciones funcionando con estabilidad.</p><ul><li>Soporte remoto</li><li>Diagnóstico de incidentes</li><li>Soporte funcional de sistemas</li></ul><a href="#contacto" data-service="Soporte TI empresarial">Solicitar cotización →</a></article>
-<article class="card"><span class="num">SERVICIO 04</span><div class="symbol">▥</div><h3>Analítica de datos</h3><p>Transformamos datos en información clara para facilitar el seguimiento y la toma de decisiones.</p><ul><li>Dashboards y reportes</li><li>Excel y Power BI</li><li>Indicadores de gestión</li></ul><a href="#contacto" data-service="Analítica de datos">Solicitar cotización →</a></article>
-<article class="card wide"><span class="num">SERVICIO 05</span><div class="symbol">◇</div><h3>Consultoría TI y ERP</h3><p>Apoyo especializado para entender necesidades del negocio, mejorar procesos y acompañar proyectos tecnológicos, incluyendo entornos ERP.</p><ul><li>Levantamiento de requerimientos</li><li>Acompañamiento en proyectos ERP</li><li>Mejora y documentación de procesos</li></ul><a href="#contacto" data-service="Consultoría TI y ERP">Solicitar cotización →</a></article>
-</div></div></section>
-<section class="section" id="metodologia"><div class="container split"><div class="dark-panel"><div class="small">Nuestro enfoque</div><h3>La tecnología debe resolver problemas, no crearlos.</h3><p>Partimos de tus necesidades reales para proponer soluciones viables, medibles y alineadas con tu presupuesto.</p></div><div><div class="kicker">Cómo trabajamos</div><h2>Un proceso sencillo y transparente.</h2><div class="steps"><div class="step"><b>01</b><div><strong>Escuchamos tu necesidad</strong><p>Conversamos sobre el reto, los usuarios y el resultado que esperas.</p></div></div><div class="step"><b>02</b><div><strong>Proponemos la solución</strong><p>Definimos alcance, entregables, tiempos y presupuesto.</p></div></div><div class="step"><b>03</b><div><strong>Implementamos y validamos</strong><p>Construimos la solución y revisamos contigo su funcionamiento.</p></div></div><div class="step"><b>04</b><div><strong>Entregamos y acompañamos</strong><p>Te orientamos en el uso y acordamos cualquier soporte adicional.</p></div></div></div></div></div></section>
-<section class="section expert" id="nosotros"><div class="container expert-grid"><div><div class="section-head"><div class="kicker" style="color:#48e7c9">Quién está detrás</div><h2>Conocimiento técnico y visión de negocio.</h2><p>SOLVYNIX es una propuesta de servicios tecnológicos liderada por José Gelvez Soler, con formación en ingeniería de software y gerencia de proyectos informáticos.</p></div><ul><li>Experiencia en soporte y soluciones empresariales</li><li>Conocimiento de entornos ERP y procesos de negocio</li><li>Orientación a gestión de proyectos tecnológicos</li><li>Atención a emprendimientos y empresas</li></ul></div><div class="expert-note"><div class="kicker" style="color:#48e7c9">Nuestra promesa</div><h3 style="font-size:27px;line-height:1.25;color:white">Soluciones que se entienden. Proyectos que se pueden gestionar.</h3><p>No ofrecemos herramientas por moda: buscamos la alternativa adecuada para cada necesidad, con alcance definido y comunicación constante.</p></div></div></section>
-<section class="section soft" id="contacto"><div class="container contact-wrap"><div><div class="kicker">Hablemos</div><h2>Cuéntanos qué quieres mejorar en tu negocio.</h2><p>Describe tu necesidad y preparamos una propuesta con el alcance y los siguientes pasos. La primera conversación para identificar tu necesidad no tiene costo.</p><p><strong>SOLVYNIX</strong><br/>Soluciones Tecnológicas · Colombia</p><p class="muted">Este prototipo aún no tiene un correo o WhatsApp empresarial configurado. Puedes copiar la solicitud preparada y enviarla por el canal que prefieras.</p></div><form class="contact-box fields" id="leadForm"><label>Tu nombre<input id="name" placeholder="Nombre y apellido" required maxlength="100"/></label><label>Empresa (opcional)<input id="company" placeholder="Nombre del negocio" maxlength="100"/></label><label>Servicio de interés<select id="service" required><option value="">Selecciona un servicio</option><option>Desarrollo web</option><option>Automatización e IA</option><option>Soporte TI empresarial</option><option>Analítica de datos</option><option>Consultoría TI y ERP</option><option>No estoy seguro / otro</option></select></label><label>¿Qué necesitas?<textarea id="message" placeholder="Cuéntanos un poco sobre tu proyecto..." required maxlength="1500"></textarea></label><button type="submit" class="btn primary">Preparar solicitud →</button><div class="status" id="status" role="status"></div><div id="result" style="display:none"><label>Mensaje listo para compartir<textarea id="prepared" readonly style="min-height:180px"></textarea></label><button class="btn dark" type="button" id="copy">Copiar solicitud</button></div><span class="muted">No se envía información a ningún servidor desde este prototipo. La solicitud se genera en tu navegador.</span></form></div></section>
-</main><footer class="footer"><div class="container foot-inner"><span><strong>SOLVYNIX</strong> · Soluciones Tecnológicas</span><span>© <span id="year"></span> SOLVYNIX · Colombia</span><span>Conectamos tecnología con resultados.</span></div></footer>
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();const menu=document.getElementById('menu'),nav=document.getElementById('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('show');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('show');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));document.querySelectorAll('[data-service]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('service').value=a.dataset.service}));document.getElementById('leadForm').addEventListener('submit',e=>{e.preventDefault();const v=id=>document.getElementById(id).value.trim();const output=`Hola, SOLVYNIX. Quiero solicitar una propuesta.\n\nNombre: ${v('name')}\nEmpresa: ${v('company')||'No especificada'}\nServicio: ${v('service')}\nNecesidad: ${v('message')}`;document.getElementById('prepared').value=output;document.getElementById('result').style.display='grid';document.getElementById('status').style.display='block';document.getElementById('status').textContent='Solicitud preparada. Cópiala y envíala por tu canal de contacto preferido.'});document.getElementById('copy').addEventListener('click',async()=>{const t=document.getElementById('prepared');try{await navigator.clipboard.writeText(t.value);document.getElementById('status').textContent='Solicitud copiada. Ya puedes pegarla en tu correo o chat.'}catch(e){t.select();document.execCommand('copy');document.getElementById('status').textContent='Solicitud seleccionada. Puedes copiarla manualmente.'}})
-</script>
-</body></html>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="SOLVYNIX, inicio">
+      <img class="brand__mark" src="assets/img/simbolo-s-pluma.png" alt="" width="34" height="34" decoding="async">
+      <span class="brand__word">SOLVYNIX</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Método</a>
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="btn btn--sm btn--ghost" data-wa href="#diagnostico">WhatsApp</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="menu" id="menu-movil" hidden>
+    <a href="#servicios">Servicios</a>
+    <a href="#metodo">Método</a>
+    <a href="#diagnostico">Diagnóstico</a>
+    <a href="#contacto">Contacto</a>
+    <a class="menu__mail" id="menu-mail" href="mailto:solvynix.contacto@gmail.com?subject=Quiero%20ordenar%20mi%20negocio">solvynix.contacto@gmail.com</a>
+    <a class="menu__wa" data-wa href="#diagnostico">Escribir por WhatsApp</a>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <section class="hero" id="top">
+    <canvas class="hero__trails" id="trails" aria-hidden="true"></canvas>
+    <div class="hero__veil" aria-hidden="true"></div>
+
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <h1 class="hero__title">
+          <span class="hero__line hero__line--strong">Tu negocio,</span>
+          <span class="hero__line hero__line--soft">en orden.</span>
+        </h1>
+        <p class="hero__sub">
+          Consultoría y software para negocios locales que viven entre Excel, papel y WhatsApp.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" data-wa href="#diagnostico">
+            Escribir por WhatsApp
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="link-arrow" href="#metodo">Ver cómo trabajamos</a>
+        </div>
+      </div>
+
+      <aside class="diag-card" aria-label="Diagnóstico express">
+        <div class="diag-card__top">
+          <span class="diag-card__label">Diagnóstico express</span>
+          <span class="diag-card__time">60 s</span>
+        </div>
+        <p class="diag-card__q">¿Cuánto tiempo se te va cada semana en lo mismo de siempre?</p>
+        <a class="diag-card__go" href="#diagnostico">
+          Empezar
+          <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="diag-card__note">4 preguntas. Sin registro. Nada se envía hasta que tú lo envías.</p>
+      </aside>
+    </div>
+
+    <div class="hero__word" aria-hidden="true">SOLVYNIX</div>
+  </section>
+
+  <section class="statement">
+    <div class="wrap">
+      <p class="statement__text" data-reveal>
+        SOLVYNIX junta las dos mitades que casi siempre se contratan por separado:
+        <span class="chip">entender el negocio</span> y <span class="chip chip--ink">construir la herramienta.</span>
+        Así no tienes que traducir tu problema de un proveedor a otro.
+      </p>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 class="h2">Qué resolvemos</h2>
+        <p class="section-lede">Cuatro formas de trabajo. Se combinan según lo que te esté frenando hoy, no según un paquete prearmado.</p>
+      </div>
+
+      <div class="bento">
+
+        <article class="card card--navy card--tall" data-reveal>
+          <div class="card__body">
+            <h3 class="card__title">Consultoría y estrategia</h3>
+            <p class="card__text">Antes de programar una línea, entendemos cómo entra el dinero y dónde se va el tiempo. Salimos con el problema escrito y priorizado.</p>
+            <ul class="ticks">
+              <li>Mapa de tu operación actual</li>
+              <li>Prioridades por impacto, no por gusto</li>
+              <li>Plan por etapas, con entregables claros</li>
+            </ul>
+          </div>
+          <img class="card__watermark" src="assets/img/simbolo-s-pluma.png" alt="" width="220" height="220" loading="lazy" decoding="async">
+        </article>
+
+        <article class="card card--cyan" data-reveal>
+          <div class="card__body">
+            <h3 class="card__title">Software a medida</h3>
+            <p class="card__text">Sistemas que se parecen a cómo trabajas tú, no a cómo trabaja el software genérico de la categoría.</p>
+          </div>
+          <div class="mini" aria-hidden="true">
+            <div class="mini__row"><span>Cotización 0231</span><b class="mini__ok">Aprobada</b></div>
+            <div class="mini__row"><span>Pedido 0231</span><b class="mini__wait">En ruta</b></div>
+            <div class="mini__row"><span>Cliente nuevo</span><b class="mini__wait">Por llamar</b></div>
+            <div class="mini__row mini__row--hint"><span>Todo en un solo lugar</span></div>
+          </div>
+        </article>
+
+        <article class="card card--white" data-reveal>
+          <div class="card__body">
+            <h3 class="card__title">Automatización con IA</h3>
+            <p class="card__text">Lo que hoy haces a mano y siempre igual deja de necesitarte: respuestas, cotizaciones, captura de datos.</p>
+          </div>
+          <div class="flow" aria-hidden="true">
+            <span class="flow__node">Entra un mensaje</span>
+            <svg class="flow__arrow" viewBox="0 0 40 8" width="40" height="8"><path d="M0 4h32M28 1l4 3-4 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <span class="flow__node flow__node--on">Sale la respuesta</span>
+          </div>
+        </article>
+
+        <article class="card card--paper" data-reveal>
+          <div class="card__body">
+            <h3 class="card__title">Sitios web y <span class="nowrap">e-commerce</span></h3>
+            <p class="card__text">Tu negocio visible y vendible desde el teléfono, sin depender de que alguien conteste un chat para dar precios.</p>
+            <ul class="ticks ticks--dark">
+              <li>Catálogo y pedidos</li>
+              <li>Pagos y envíos</li>
+              <li>Editable por ti</li>
+            </ul>
+          </div>
+        </article>
+
+        <a class="card card--cta" href="#diagnostico" data-reveal>
+          <span class="card--cta__text">¿No sabes cuál te toca?</span>
+          <span class="card--cta__action">
+            Haz el diagnóstico
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="method" id="metodo">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 class="h2">Cómo trabajamos</h2>
+        <p class="section-lede">Tres etapas. En cada una sabes qué estás recibiendo y qué sigue.</p>
+      </div>
+
+      <div class="rail" aria-hidden="true"><span class="rail__fill" id="rail-fill"></span></div>
+
+      <ol class="steps">
+        <li class="step" data-reveal>
+          <span class="step__num">01</span>
+          <h3 class="step__title">Entendemos</h3>
+          <p class="step__text">Una llamada y una revisión de cómo operas hoy. Salimos con el problema escrito, no con una propuesta genérica.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__num">02</span>
+          <h3 class="step__title">Construimos</h3>
+          <p class="step__text">Entregas por etapas: primero lo que más tiempo te devuelve. Ves el avance funcionando, no en capturas.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__num">03</span>
+          <h3 class="step__title">Acompañamos</h3>
+          <p class="step__text">Ajustes, dudas y mejoras después de entregar. El código, los accesos y la documentación quedan de tu lado.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="diag" id="diagnostico">
+    <div class="wrap diag__grid">
+      <div class="diag__intro">
+        <h2 class="h2 h2--light">Cuéntanos qué te está frenando.</h2>
+        <p class="diag__lede">Cuatro preguntas. Al final te damos un mensaje armado con tus respuestas, listo para enviárnoslo por WhatsApp.</p>
+        <ul class="diag__notes">
+          <li>Nada se envía solo: tú decides cuándo.</li>
+          <li>No pedimos correo ni tarjeta.</li>
+          <li>Si no aplica, te lo decimos en la respuesta.</li>
+        </ul>
+      </div>
+
+      <div class="diag__panel">
+        <form class="quiz" id="quiz" novalidate>
+          <div class="quiz__head">
+            <span class="quiz__count"><b id="quiz-step">1</b> / 4</span>
+            <div class="quiz__ticks" id="quiz-ticks" aria-hidden="true">
+              <i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+
+          <div class="quiz__stage" id="quiz-stage"></div>
+
+          <div class="quiz__fallback">
+            <p class="quiz__fallback-text">El diagnóstico no está disponible en este navegador. Escríbenos directo y te hacemos las preguntas por WhatsApp.</p>
+            <a class="btn btn--primary" href="https://wa.me/573203469272?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20SOLVYNIX.%20Quiero%20ordenar%20mi%20negocio%20y%20ver%20qu%C3%A9%20me%20conviene.%20%C2%BFPodemos%20hablar%3F">Escribir por WhatsApp</a>
+            <a class="quiz__fallback-mail" href="mailto:solvynix.contacto@gmail.com?subject=Quiero%20ordenar%20mi%20negocio">solvynix.contacto@gmail.com</a>
+          </div>
+
+          <p class="quiz__live" id="quiz-live" role="status" aria-live="polite"></p>
+
+          <div class="quiz__result" id="quiz-result" hidden>
+            <p class="quiz__result-label" tabindex="-1">Tu mensaje está listo</p>
+            <label class="quiz__name">
+              <span>Tu nombre (opcional)</span>
+              <input id="quiz-name" type="text" autocomplete="name" placeholder="Ej. Ana" maxlength="60">
+            </label>
+            <p class="quiz__message" id="quiz-message"></p>
+            <div class="quiz__result-actions">
+              <a class="btn btn--primary" id="quiz-send" data-wa href="#">Abrir WhatsApp con este mensaje</a>
+              <button class="link-arrow link-arrow--light" type="button" id="quiz-restart">Volver a empezar</button>
+            </div>
+            <p class="quiz__fine">Se abre WhatsApp con el texto ya escrito. Puedes editarlo antes de enviarlo.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 class="h2">Cómo se trabaja con nosotros</h2>
+      </div>
+      <div class="work__grid">
+        <article class="work__item" data-reveal>
+          <h3 class="work__title">Hablas con quien construye</h3>
+          <p class="work__text">Sin cuentas que se pasan de mano ni respuestas de call center. La persona que entiende tu problema es la que hace el trabajo.</p>
+        </article>
+        <article class="work__item" data-reveal>
+          <h3 class="work__title">Te quedas con lo que se usó</h3>
+          <p class="work__text">Código, accesos y documentación quedan de tu lado. Si mañana quieres seguir con otro equipo, puedes.</p>
+        </article>
+        <article class="work__item" data-reveal>
+          <h3 class="work__title">Sin reportes de relleno</h3>
+          <p class="work__text">Cada entrega resuelve una parte concreta del problema. No sumamos funciones para llenar la lista.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" id="contacto">
+    <div class="wrap close__grid">
+      <div class="close__copy">
+        <h2 class="close__title">Hablemos<br>de tu negocio.</h2>
+        <p class="close__lede">Cuéntanos qué te está costando tiempo. Si podemos resolverlo, te decimos cómo. Si no, también.</p>
+      </div>
+      <div class="close__actions">
+        <a class="btn btn--primary btn--lg" data-wa href="#diagnostico">Escribir por WhatsApp</a>
+        <a class="btn btn--outline btn--lg" id="mail-link" href="mailto:solvynix.contacto@gmail.com?subject=Quiero%20ordenar%20mi%20negocio">Enviar un correo</a>
+        <p class="close__fine">Te respondemos por WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="close__brand" aria-hidden="true">SOLVYNIX</div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div class="foot__brand">
+      <a class="foot__lockup" href="#top" aria-label="SOLVYNIX, inicio">
+        <img src="assets/img/simbolo-s-pluma.png" alt="" width="38" height="38" loading="lazy" decoding="async">
+        <span class="foot__word">SOLVYNIX</span>
+      </a>
+      <span class="foot__tag">Soluciones que transforman</span>
+    </div>
+    <nav class="foot__nav" aria-label="Pie de página">
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Método</a>
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#top">Volver arriba</a>
+    </nav>
+    <p class="foot__legal">© <span id="year">2026</span> SOLVYNIX. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

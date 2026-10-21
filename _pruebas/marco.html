@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>marco de pruebas</title>
+<style>
+  html, body { margin: 0; background: #c9c9c9; overflow: hidden; }
+  #win { position: relative; overflow: hidden; background: #fff; }
+  #f { position: absolute; top: 0; left: 0; transform-origin: 0 0; border: 0; display: block; }
+</style></head>
+<body>
+<div id="win"><iframe id="f" src="../index.html" title="prueba"></iframe></div>
+<script>
+  var p = new URLSearchParams(location.search);
+  var w = +(p.get('w') || 1440);
+  var h = +(p.get('h') || 900);
+  var s = +(p.get('scale') || 1);
+  var x = +(p.get('x') || 0);
+  var y = +(p.get('y') || 0);
+  var f = document.getElementById('f');
+  var win = document.getElementById('win');
+  f.style.width = w + 'px';
+  f.style.height = h + 'px';
+  f.style.transform = 'scale(' + s + ')';
+  f.style.left = (-x * s) + 'px';
+  win.style.width = (w * s) + 'px';
+  win.style.height = (h * s) + 'px';
+  window.setFrame = function (nx, ny) {
+    f.style.left = (-nx * s) + 'px';
+    var d = f.contentDocument;
+    if (d) { d.documentElement.scrollTop = ny; d.body.scrollTop = ny; }
+  };
+  f.addEventListener('load', function () {
+    var d = f.contentDocument;
+    if (!d) return;
+    var st = d.createElement('style');
+    st.textContent = '[data-reveal]{opacity:1!important;transform:none!important;filter:none!important}' +
+      '*,*::before,*::after{transition:none!important;animation:none!important}' +
+      'html{scroll-behavior:auto!important}' +
+      (p.get('nav') === 'abs' ? '.nav{position:absolute!important}' : '');
+    d.head.appendChild(st);
+    function pin() {
+      d.documentElement.scrollTop = y;
+      d.body.scrollTop = y;
+    }
+    if (p.get('nopin') !== '1') {
+      pin();
+      requestAnimationFrame(function () { pin(); requestAnimationFrame(pin); });
+      setTimeout(pin, 60);
+      setTimeout(pin, 240);
+    }
+  });
+</script>
+</body></html>
